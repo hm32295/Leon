@@ -1,0 +1,354 @@
+/* Starts Global Rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: "Work Sans","sans-serif";
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+@media (max-width:768px) {
+    .container{
+        width:750px;
+    }
+    
+}
+
+@media (max-width:992px) {
+    .container{
+        width:970px;
+    }
+    
+}
+
+@media (max-width:1200px) {
+    .container{
+        width:1170px;
+    }
+    
+}
+@media (min-width:1200px) {
+    .container{
+        width:1170px;
+    }
+    
+}
+
+section .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+section .container .speical-heading{
+    background-color: #dddddd7e;width: 100%;
+    padding-bottom: 10px;
+    
+
+}
+section .container .speical-heading h2{
+    font-size: 70px;
+    color: #a39d9d;
+    opacity: .3;
+    letter-spacing: -7px;
+
+}
+section .container .speical-heading p{
+    color: #aaa;
+    margin-top: -27px;
+}
+@media (max-width:300px) {
+
+    section .container .speical-heading p{
+        margin-top: -15px ;
+    }
+}
+
+/* Stat Header */
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    color: #0efcf0;
+    width: 60px;
+    font-size: 60px;
+}
+header .container .links{
+    position: relative;
+    
+}
+header .container .links .icon span{
+    width: 30px;
+    height: 1px;
+    background-color: #aaa;
+    margin-bottom: 5px;
+    
+}
+header .container .links .icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 30px;
+    flex-wrap: wrap;
+}
+header .container .links:hover ul{
+    display: block;
+}
+header .container .links .icon span:nth-child(2){
+    width:15px;
+    align-self: flex-end;
+    transition: .3s;
+}
+header .container .links:hover .icon span:nth-child(2){
+    width: 30px;
+}
+header .container .links ul::before{
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent #a39d9d transparent;
+    position: absolute;
+    top:-15px;
+    right: 0px;
+}
+header .container .links ul{
+    background-color: #f6f6f6;
+    padding:3px;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    transition: .3s;
+    display: none;
+
+
+}
+header .container .links ul li a{
+    display: block;
+    padding: 15px;
+}
+header .container .links ul li:not(:last-child) a{
+    border-bottom: 1px solid #a39d9d;
+}
+header .container .links ul li a:hover{
+    background-color: #eee;
+    width :100%;
+}
+
+/* End Header */
+
+/* Start Landing Section  */
+.lading{
+    background-image: url("../img/download.jpg");
+    background-size: cover ;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+.lading .into-text{
+    text-align: center;
+    margin-right:auto ;
+    margin-left: auto;
+}  
+.lading .into-text h1{
+    color:#14f0da;
+    font-size: 80px;
+}
+@media (max-width:500px) {
+    .lading .into-text h1{
+        font-size: 60px;
+    }
+}
+@media (max-width:360px) {
+    .lading .into-text h1{
+        font-size: 40px;
+    }
+    
+}
+.lading .into-text p {
+    font-size: 32px;
+}
+/* End Landing Section  */
+
+/* Start features */
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .container{
+    display: grid;
+    grid-template-columns :repeat(auto-fill, 
+        minmax(300px, 1fr));
+    grid-gap:20px;
+    padding: 20px;
+    margin-top:20px ;
+    margin-right:auto ;
+    margin-left:auto ;
+
+    
+}
+.features .container .feat{
+    text-align: center;
+    margin-right:auto ;
+    margin-left:auto ;
+    
+}
+.features .container .feat i {
+    margin: 10px;
+    color: #0efcf0;
+}
+.features .container .feat h3{
+    font-weight: 800;
+}
+.features .container .feat p{
+    line-height: 1.6;
+}
+
+
+/* End features */
+
+/* Start Serviers */
+
+
+section .container .catigory i{
+    font-size: 30px;
+    color: #0efcf0;
+}
+
+section .container .catigory{
+    margin-top:50px ;
+    text-align: left; 
+    display: grid;
+    width: 97%;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    grid-gap:20px;
+    justify-content: center;
+}
+
+section .container .catigory .left{
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+}
+
+section .container .catigory .child{
+    
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+section .container .catigory .child .sub-right h3{
+    margin-bottom: 8px;
+}
+section .container .catigory .child .sub-left{
+    margin-right: 15px;
+
+}
+section .container .catigory:nth-of-type(2) .right{
+    
+    background-color: #ddd;
+    height: 200px;
+    position: relative;
+    margin-top:50px ;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+section .container .catigory:nth-of-type(2) .right::after{
+    content: "";
+    width: 80px;
+    height: 280px;
+    background-color: #333;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    z-index: -1;
+}
+
+section .container .catigory:last-child img{
+    width: 100%;
+    
+
+}
+section .container .catigory:last-child input{
+    width: 140px;
+    height: 30px;
+    display: block;
+}
+
+
+/* End Serviers */
+.container .aAbout{
+    display: flex;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+.container .aAbout .right,
+.container .aAbout .left{
+    margin:20px ;
+}
+
+.container .aAbout img{
+    max-width: 100%;
+
+}
+.container .aAbout p:first-child{
+    font-weight: bold;
+    margin-bottom: 20px ;
+    position: relative;
+}
+.container .aAbout p:first-child:after{
+    content: "";
+    width: 50%;
+    position: absolute;
+    background-color: #0efcf0;
+    bottom: -10px;
+    left: 10px;
+    height: 4px;
+}
+.aAbout .left{
+    position: relative;
+}
+.aAbout .left::before{
+    content: "";
+    position: absolute;
+    top:-20px;
+    right: -60px;
+    width: 40px;    
+    background-color: transparent;
+    height: 100%;
+    z-index: -1;
+    border-left:solid red 40px ;
+    border-bottom:solid red 40px ;
+}
